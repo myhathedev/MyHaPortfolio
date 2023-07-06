@@ -1,0 +1,137 @@
+@use './global' as g;
+
+.home-page {
+    position: relative;
+    height: 41.9vw;
+    margin-top:-4.5vw;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.home-content {
+    margin-top: 6vw;
+    margin-left: 15vw;
+    width: 50vw;
+    & .section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+    }
+}
+
+.myname {
+    width: 22vw;
+}
+.skill-list {
+ display: flex;
+}
+
+.skill {
+    width: 13vw;
+    font-size: 1.5vw;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0.2vw 0;
+}
+
+.skill-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0.2vw 0;
+}
+
+.main-image {
+    height: 32vw;
+    object-fit: contain;
+    position: absolute;
+    top: -2vw;
+    right: -2vw;
+    & img {
+        height: 100%;
+        border-radius: 50% 50%;
+        border: g.$barbie solid 0.5vw;
+    }
+}
+
+.pattern-image {
+    height: 5vw;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    gap:-1vw;
+    position: absolute;
+    left:0;
+    bottom: 0vw;
+    & img {
+        height: 100%;
+    }
+    z-index: -10;
+
+}
+
+@media (max-width: 700px) {
+    .home-page {
+        height: 98vh;
+        min-height:220vw;
+    }
+    
+    .home-content {
+        margin-top: 7vw;
+        margin-left: 0vw;
+        width: 100vw;
+        & .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 5vw;
+        }
+    }
+    
+    .myname {
+        width: 60vw;
+    }
+    .skill-list {
+     width: 93%;
+     margin: auto;
+    }
+    
+    .skill {
+        width: 30vw;
+        font-size: 4vw;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        margin: 0.8vw 0;
+    }
+    
+    .skill-content {
+        font-size: 3.5vw;
+        margin: 0.8vw 0;
+    }
+    
+    .main-image {
+        height: 60vw;
+        display: flex;
+        justify-content: center;
+        object-fit: contain;
+        position: unset;
+        margin-top: 10vw;
+    }
+    
+    .pattern-image {
+        height: 30vw;
+        overflow: hidden;
+        display: flex;
+        gap:-1vw;
+        position: absolute;
+        left:0;
+        bottom: 0;
+        & img {
+            height: 100%;
+        }
+    
+    }
+}
+

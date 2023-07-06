@@ -1,0 +1,41 @@
+
+@use './global' as g;
+
+.Nav {
+    display: flex;
+    padding:0 2vw 0 1vw; 
+    width: fit-content;
+    border-bottom: solid g.$barbie 0.2vw ;
+}
+.nav-item {
+    cursor: pointer;
+    padding: 1vw 2vw;
+}
+
+.nav-item:hover {
+    background-color: g.$barbie-light1;
+    transition: all 0.5s ease-in ;
+    -moz-transition: all .5s ease-in ;
+    -webkit-transition: all .5s ease-in ;
+    -o-transition: all .5s ease-in ;
+    -ms-transition: all .5s ease-in ;
+}
+.nav-link {
+    text-decoration: unset;
+    color: g.$barbie;
+    font-size: 1.5vw;
+ 
+}
+
+@media (max-width: 700px) {
+    .Nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: solid g.$barbie 0.3vw ;
+        padding:0;
+    }
+    .nav-link {
+        font-size: 3.9vw;
+    }
+}

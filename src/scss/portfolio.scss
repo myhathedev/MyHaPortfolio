@@ -1,0 +1,158 @@
+
+@use './global' as g;
+
+.portfolio-page {
+    height: 253vw;
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-content {
+    font-size: 1.1vw;
+}
+
+.my-portfolio{
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    & img {
+        height: 100%;
+    }
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+}
+
+.app-name {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.utilized {
+    display: flex;
+    gap: 0.5vw;
+    flex-wrap: wrap;
+}
+
+.app-item {
+    position: relative;
+    display: flex;
+    padding-left: 5vw;
+    width: 85vw;
+    height: 22vw;
+    margin-left: 15vw;
+    background-color: g.$barbie-light2;
+    border-radius: 1vw;
+    margin-bottom: 8vw;
+    box-shadow: 0.2vw 0.2vw  0.5vw 0  grey;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.app-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app-video-div {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app-video {
+    width: 30vw;
+    height: 15vw;
+}
+
+.rectangle {
+    position: absolute;
+    z-index: -10;
+    background-color: g.$barbie-light1;
+    width: 75vw;
+    height: 260vw;
+    left:-5vw;
+    top: 11vw;
+    border-radius: 2vw;
+}
+
+.white-dots {
+    position: absolute;
+    height: 22vw;
+    top: -3vw;
+    left: -5vw;
+    z-index: -2;
+    & img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio-page {
+        height: 870vw;
+    }
+    .portfolio-content {
+        font-size: 2.2vw;
+    }
+    
+    .my-portfolio{
+        height: 16vw;
+        margin-top: 4vw;
+        margin-bottom: 10vw;
+    }
+    
+    .app-name {
+        font-size: 4vw;
+    }
+    
+    .utilized {
+        display: flex;
+        gap: 0.5vw;
+        flex-wrap: wrap;
+    }
+    
+    .app-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw 10vw;
+        width: 60vw;
+        height: 80vw;
+        margin-bottom: 15vw;
+        justify-content: center;
+        gap: 8vw;
+    }
+    
+    .app-text {
+        width: 90%;
+    }
+    
+    .app-video-div {
+        width: 100%;
+    
+    }
+    
+    .app-video {
+        width: 60vw;
+        height: 30vw;
+    }
+    
+    .rectangle {
+        position: absolute;
+        z-index: -10;
+        height: 900vw;
+        top: 22vw;
+    }
+    
+    .white-dots {
+        height: 50vw;
+        top: -7vw;
+        left: -10vw;
+        z-index: -2;
+        & img {
+            height: 100%;
+        }
+    }
+    
+}

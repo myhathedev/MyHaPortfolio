@@ -1,0 +1,172 @@
+@use './global' as g;
+
+.about-page {
+    position: relative;
+    height: 80vw;
+    overflow: hidden;
+    margin-top:-4.5vw;
+    z-index: -1;
+
+}
+
+.about-content {
+    margin: 10vw 15vw 15vw 5vw; 
+    font-size: 1.8vw;   
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5vw;
+}
+
+.section1 , .section2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.section2 {
+    align-items: flex-end;
+}
+
+.career-name {
+    height: 6vw;
+    & img {
+        height: 100%;
+    }
+}
+
+.career-content1{
+    width: 50vw;
+    padding: 3vw 20vw 3vw 5vw;
+    border: g.$barbie 0.2vw solid ;
+    border-radius: 2vw;
+}
+
+.career-content2{
+    width: 35vw;
+    padding: 3vw 5vw 3vw 35vw;
+    border: g.$barbie 0.2vw solid ;
+    border-radius: 2vw;
+}
+
+.image1 {
+    height: 25vw;
+    position: absolute;
+    bottom:2vw;
+    right:8vw; 
+    & img {
+        height: 100%;
+    }
+}
+
+.image2 {
+    height: 25vw;
+    position: absolute;
+    bottom:-8vw;
+    left: 0 ; 
+    & img {
+        height: 100%;
+    }
+}
+
+.image3 {
+    position: absolute;
+    display: flex;
+    top: -2vw;
+    right :0.7vw;
+    z-index: -1;
+    width: 10vw;
+    & img {
+        width: 100%;
+    }
+}
+
+.career1 {
+    opacity: 0;
+    animation : appear2 0.8s ease-in forwards; 
+    transform-origin: center bottom;
+}
+
+.career2 {
+    opacity: 0;
+    animation : appear2 0.8s 0.5s ease-in forwards; 
+    transform-origin: center bottom;   
+}
+
+@media (max-width: 700px) {
+    .about-page {
+        position: relative;
+        height: 190vw;
+        margin-top:-9vw;
+    }
+    
+    .about-content {
+        margin: 20vw 15vw 15vw 5vw; 
+        font-size: 3.5vw;   
+        gap: 10vw;
+    }
+    
+    .section1 , .section2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    
+    
+    .career-name {
+        height: 12vw;
+    }
+
+    .career-content1{
+        width: 50vw;
+        padding: 3vw 20vw 3vw 5vw;
+        border: g.$barbie 0.2vw solid ;
+        border-radius: 2vw;
+    }
+    
+    .career-content2{
+        width: 60vw;
+        padding: 3vw 5vw;
+        padding-bottom: 40vw;
+        border: g.$barbie 0.2vw solid ;
+        border-radius: 2vw;
+    }
+    
+    .image1 {
+        height: 45vw;
+        position: absolute;
+        bottom:2vw;
+        right:-5vw; 
+        & img {
+            height: 100%;
+        }
+    }
+    
+    .image2 {
+        height: 45vw;
+        position: absolute;
+        bottom:-8vw;
+        left: 7vw ; 
+        & img {
+            height: 100%;
+        }
+    }
+    
+    .image3 {
+        width: 15vw;
+    }
+    
+}
+
+@keyframes appear2 {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+      }
+      to {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+}

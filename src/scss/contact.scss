@@ -1,0 +1,153 @@
+.contact-page {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact-image {
+    height: 18vw;
+    position: absolute;
+    top: 10vw;
+    left: 15vw;
+    opacity: 0;
+    animation: appear 1.5s  ease-in-out 0.5s forwards;
+    & img {
+        height: 100%;
+        border-radius: 1vw;
+        border: white solid 0.2vw;
+        box-shadow: 0.2vw 0.2vw 1vw black;
+    }
+}
+
+.contact-pattern {
+    height: 60vw;
+    position: absolute;
+    top: -1vw;
+    right: 5vw;
+    z-index: -1;
+    & img {
+        height: 100%;
+    }
+}
+
+.contact-info {
+    position: absolute;
+    top: 8vw;
+    left: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    opacity: 0;
+    animation: appear 1s ease-in-out forwards;
+}
+
+.info-item {
+    display: flex;
+
+}
+
+.info-title {
+    width: 10vw;
+}
+
+.contact-name {
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 3vw;
+}
+
+.contact-media {
+    height: 3vw;
+    & img {
+        height: 100%;
+    }
+}
+
+.contact-media-div {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.info-item-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.contact-job {
+    font-size: 2vw;
+}
+.typewriter {
+    width: 37vw;
+    position: absolute;
+    top: 30vw;
+    left: 48vw;
+}
+.typewriter p{
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation:  
+      typing 3.5s steps(40, end) ,
+      blink-caret .75s step-end infinite ;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-pattern {
+        height: 100vw;
+        top: 20vw;
+        right: -20vw;
+    }
+    .contact-image {
+        height: 25vw;
+        top: 18vw;
+        left: 5vw;
+    }
+    .contact-info {
+        top: 35vw;
+        left: 35vw;
+        display: flex;
+        gap: 4vw;
+    }
+    .contact-name {
+        font-size: 6vw;
+        text-align: right;
+    }
+    .info-title {
+        width: 15vw;
+    }
+    .contact-media  {
+        height: 6vw;
+    }
+    .contact-job {
+        text-align: right;
+        font-size: 3vw;
+    }
+    .typewriter {
+        width: 73vw;
+        position: absolute;
+        top: 75vw;
+        left: 25vw;
+    }
+    .contact-media-div {
+        gap: 6vw;
+    }
+}
