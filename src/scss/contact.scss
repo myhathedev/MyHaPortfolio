@@ -57,6 +57,10 @@
     height: 3vw;
     & img {
         height: 100%;
+        transition: 0.3s all ease-in-out;
+    }
+    & img:hover {
+        scale: 1.2;
     }
 }
 

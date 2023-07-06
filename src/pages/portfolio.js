@@ -2,6 +2,7 @@ import '../scss/portfolio.scss';
 import metadata from '../data/metadata';
 import HTMLReactParser from 'html-react-parser';
 import svg from '../svg/white-dots.svg';
+import { useEffect, useState } from 'react';
 
 function Portfolio() {
   return (
@@ -16,6 +17,7 @@ function Portfolio() {
               <div key={index+item} className='app-item'>
                 <div className='app-text'>
                   <div className="app-name">{item.name}</div>
+                  {item.link && <a href={item.link} rel="noreferrer" target='_blank'>Click here to view website</a>}
                   <ul> 
                     {item.description.map((item2,index2)=>(
                       <li key={index2+item2}>{item2}</li>
@@ -28,8 +30,11 @@ function Portfolio() {
                       ))}
                   </div>
                 </div>
-                <div className='app-video-div'>                 
-                  <div className='app-video'>{HTMLReactParser(item.url)}</div>
+                <div className='project'>  
+                <div className='app-video'>    
+                    <img src={item.thumbnail} alt='thumbnail'></img>                    
+                    <div>{HTMLReactParser(item.url)} </div>
+                   </div>
                 </div>
                 <div className='white-dots'>
                   <img src={svg} alt='decoration'></img>

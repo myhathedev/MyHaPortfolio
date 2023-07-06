@@ -80,6 +80,7 @@ const metadata = {
             utilized: ["React","NodeJS", "MySQL", "Bootstrap","Google Text-To-Speech"],
             url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HU8_dvmmXK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             link: 'https://scripturecast.com/',
+            thumbnail : '/images/scripturecastSS.jpg',
         },
         {
             name: 'NTE website',
@@ -92,6 +93,7 @@ const metadata = {
             utilized: ["NextJS","Tailwind", "GreenSock","AWS"],
             url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/h_gKuOyy_2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             link: 'https://main.d33p9dq65zm7o4.amplifyapp.com/',
+            thumbnail : '/images/nteSS.jpg',
         },
         {
             name: 'Quiz Pal',
@@ -106,6 +108,7 @@ const metadata = {
             utilized: ["Java" , "Servlet API" , "MySQL" , "JSP" , "CSS"],
             url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/49gy3t1na7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             link: '',
+            thumbnail : '/images/quizpalSS.jpg',
         },
         {
             name: 'Popcorn Note',
@@ -119,6 +122,7 @@ const metadata = {
             utilized: ["Html5","CSS3","JavaScript","React","Node.Js","Express","MongoDB","Firebase", "Figma","Google Cloud"],
             url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IRWYKIZQm00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             link: 'https://magnetic-gadget-374407.ue.r.appspot.com/',
+            thumbnail : '/images/popcornSS.jpg',
         },
        
         {
@@ -132,6 +136,7 @@ const metadata = {
             utilized: ["Html" , "CSS" , "JavaScript" , "React" , "Node.Js" , "Bootstrap" , "AWS" , "Stripe"],
             url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/YprvYwZYj_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             link:'https://caomyhaproject.link',
+            thumbnail : '/images/scratchSS.jpg',
         },
         {
             name: 'BBC News Reader App ',
@@ -144,6 +149,7 @@ const metadata = {
             utilized: ["Android Studio","Java"],
             url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/l9CqtBUk4KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             link: '',
+            thumbnail : '/images/bbcnewsSS.jpg',
         }, 
         {
             name: 'Personal Website - Old version',
@@ -154,6 +160,7 @@ const metadata = {
             utilized: ["Html" , "CSS" , "JavaScript" , "AWS S3" , "GreenSock" , "Figma"],
             url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/gPvm-vjcQS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             link: '',
+            thumbnail : '/images/personalwebSS.jpg',
         },
         {
             name: 'Loggy',
@@ -165,6 +172,7 @@ const metadata = {
             utilized: ["Html" , "CSS" , "JavaScript" , "AWS S3" , "GreenSock" , "Figma"],
             url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Pcx_J0o70Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
             link: '',
+            thumbnail : '/images/loggySS.jpg',
         },
 
     ],
