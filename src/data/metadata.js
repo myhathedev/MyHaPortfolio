@@ -96,6 +96,19 @@ const metadata = {
             thumbnail : '/images/nteSS.jpg',
         },
         {
+            name: 'BuddyChat Android App',
+                description: [
+                    "Live chat Android app",
+                    "Design with Vampire Theme",
+                    "Photo sharing",
+                    "Authentication, profile management",
+                    ],
+                utilized: ["Java","Android Studio", "Figma","Firebase Authentication","Firebase real time database"],
+                url:`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/QCp0y_Vy5BA?si=B0HB1iQ-aWd5x-sJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+                link:'' ,
+                thumbnail : '/images/buddyChatSS.jpg',
+        },
+        {
             name: 'Quiz Pal',
             description: [
                 "Test taking web application (group-of-two project)",
